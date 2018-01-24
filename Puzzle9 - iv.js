@@ -23,7 +23,7 @@ function rect(x, y, width, height) {
   draw(down, height);
   draw(left, width);
   draw(up, height);
-  while (height > 2) {
+  while (height > 1) {
   down();
   draw(right, width);
   height = height - 1
@@ -35,4 +35,4 @@ function rect(x, y, width, height) {
 
 
 
-rect(2, 3, 6, 10);
+rect(2, 3, 6, 11);
