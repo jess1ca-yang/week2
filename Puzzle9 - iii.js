@@ -1,3 +1,4 @@
+
 function repeat(direction, n) {
   var count = 0
   while (count < n) {
@@ -15,17 +16,14 @@ function draw(direction, n) {
 	}
 }
 
-
-repeat(right, 14)
-
 function rect(x, y, width, height) {
   var count = 0
   repeat(right, x);
   repeat(down, y);
   draw(right, width);
-	draw(down, height);
-	draw(left, width);
-	draw(up, height);
+  draw(down, height);
+  draw(left, width);
+  draw(up, height);
 }
 
 
