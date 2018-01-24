@@ -20,18 +20,19 @@ function rect(x, y, width, height) {
   repeat(right, x);
   repeat(down, y);
   draw(right, width);
-	draw(down, height);
-	draw(left, width);
-	draw(up, height);
-  while (height > 0) {
+  draw(down, height);
+  draw(left, width);
+  draw(up, height);
+  while (height > 2) {
   down();
   draw(right, width);
+  height = height - 1
   down();
   draw(left, width);
-  height = height - 2
+  height = height - 1
 }
 }
 
 
 
-rect(2, 3, 6, 7);
+rect(2, 3, 6, 10);
